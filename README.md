@@ -1,16 +1,145 @@
-# React + Vite
+# 🚀 React Data Table Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This project is a **React.js application** that displays car models data in a table format with features like **pagination, sorting, filtering, and modal view**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The data is fetched from a public API and presented in a clean and interactive UI.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎯 Features
 
-## Expanding the ESLint configuration
+* ✅ Fetch data from API
+* ✅ Display data in table format
+* ✅ Search / Filter by name
+* ✅ Sorting (Ascending / Descending)
+* ✅ Pagination (10 records per page)
+* ✅ Modal popup for detailed view
+* ✅ Clean and modular component structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+* React.js (Vite)
+* JavaScript (ES6)
+* HTML & CSS
+* React Hooks (`useState`, `useEffect`)
+
+---
+
+## 📂 Project Structure
+
+```
+src/
+│
+├── components/
+│   ├── DataTable.jsx
+│   ├── Pagination.jsx
+│   ├── Filter.jsx
+│   ├── Modal.jsx
+│
+├── services/
+│   ├── api.js
+│
+├── App.jsx
+├── main.jsx
+```
+
+---
+
+## 🌐 API Used
+
+```
+https://parallelum.com.br/fipe/api/v1/carros/marcas/59/modelos
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
+
+```
+git clone <your-repo-link>
+```
+
+### 2. Navigate to project folder
+
+```
+cd your-project-name
+```
+
+### 3. Install dependencies
+
+```
+npm install
+```
+
+### 4. Run the project
+
+```
+npm run dev
+```
+
+### 5. Open in browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🧠 Key Concepts Used
+
+* React Components
+* State Management (`useState`)
+* Side Effects (`useEffect`)
+* API Fetching
+* Event Handling
+* Conditional Rendering
+* Array Methods (`map`, `filter`, `slice`, `sort`)
+
+---
+
+## 🔄 Project Workflow
+
+```
+App Load
+   ↓
+Fetch API Data
+   ↓
+Store in State
+   ↓
+Apply Filter
+   ↓
+Apply Sorting
+   ↓
+Apply Pagination
+   ↓
+Render Table
+   ↓
+User Interaction (Search / Click / Sort)
+   ↓
+Update UI
+
+---
+
+## 🚀 Future Improvements
+
+* Add loading spinner
+* Add error handling
+* Improve UI using Tailwind CSS
+* Add debounce for search
+* Add animations
+
+-
+
+---
+
+## ⭐ Conclusion
+
+This project demonstrates the practical use of **React fundamentals** to build a real-world interactive data table application.
+
+---
